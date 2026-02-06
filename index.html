@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Workflow Solutions — Automation That Pays for Itself</title>
+<title>AI Workflow & Infrastructure Solutions — Automation That Pays for Itself</title>
 
 <!-- Open Graph / Social Sharing -->
-<meta property="og:title" content="AI Workflow Solutions — Automation That Pays for Itself">
-<meta property="og:description" content="We build simple AI workflows that save your team hours every week. Deployed in days, not months. Real results from real companies.">
+<meta property="og:title" content="AI Workflow & Infrastructure Solutions — Automation That Pays for Itself">
+<meta property="og:description" content="From quick-win workflow automations to full AI infrastructure — RAG knowledge bases, tool integrations, and managed AI operations. Deployed in days, not months.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bobbypolo.github.io/AI-Consulting-Services/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Workflow Solutions — Automation That Pays for Itself">
-<meta name="twitter:description" content="We build simple AI workflows that save your team hours every week. Deployed in days, not months.">
+<meta name="twitter:title" content="AI Workflow & Infrastructure Solutions — Automation That Pays for Itself">
+<meta name="twitter:description" content="From quick-win workflow automations to full AI infrastructure. RAG knowledge bases, tool integrations, and managed operations.">
 
 <!-- Meta -->
-<meta name="description" content="AI workflow automation that pays for itself. We deploy ticket triage, helpdesk automation, document generation, and custom workflows in days — not months. Real ROI from real companies.">
-<meta name="author" content="AI Workflow Solutions">
+<meta name="description" content="AI workflow automation and infrastructure that pays for itself. From ticket triage and helpdesk automation to RAG knowledge bases, AI tool integrations, and managed AI operations. Real ROI from real companies.">
+<meta name="author" content="AI Workflow & Infrastructure Solutions">
 
 <!-- Favicon (inline SVG) -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233b82f6'/><text y='.9em' x='50' text-anchor='middle' font-size='70'>⚡</text></svg>">
@@ -111,6 +111,7 @@
   }
   .hero h1 .blue { color: #60a5fa; }
   .hero h1 .green { color: #34d399; }
+  .hero h1 .purple { color: #a78bfa; }
   .hero p.lead {
     font-size: 19px;
     color: #94a3b8;
@@ -195,6 +196,7 @@
   .section-dark h2, .section-blue h2 { color: white; }
   .section h2 .blue { color: var(--accent); }
   .section h2 .green { color: var(--green); }
+  .section h2 .purple { color: var(--purple); }
   .section-subtitle {
     font-size: 16px;
     color: var(--gray-500);
@@ -344,6 +346,7 @@
   .svc-metric-value.price { color: var(--primary); }
   .svc-metric-value.savings { color: var(--green); }
   .svc-metric-value.timeline { color: var(--accent); }
+  .svc-metric-value.infra { color: var(--purple); }
 
   /* ── QUICK WIN CALLOUT ── */
   .quickwin-tag {
@@ -662,6 +665,74 @@
     .cta-button { box-shadow: none; }
   }
 
+  /* ── BRIDGE ── */
+  .bridge {
+    text-align: center;
+    padding: 56px 60px;
+    background: linear-gradient(135deg, #f8fafc 0%, #ede9fe 50%, #f8fafc 100%);
+  }
+  .bridge-inner {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .section-tag-purple {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--purple);
+    margin-bottom: 10px;
+  }
+  .bridge h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    margin-bottom: 12px;
+  }
+  .bridge p {
+    font-size: 16px;
+    color: var(--gray-500);
+    line-height: 1.6;
+  }
+
+  /* ── INFRASTRUCTURE CARDS ── */
+  .infra-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .infra-tag {
+    display: inline-block;
+    background: var(--purple-light);
+    color: var(--purple);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+  }
+  .infra-grid .svc-card:hover {
+    border-color: var(--purple);
+    box-shadow: 0 4px 20px rgba(124,58,237,0.08);
+  }
+  .infra-grid .svc-card::before {
+    background: var(--purple);
+  }
+  .svc-card.infra-featured {
+    border-color: var(--purple);
+  }
+  .svc-card.infra-featured::before {
+    background: var(--purple);
+    opacity: 1;
+  }
+  .svc-card.infra-featured:hover {
+    box-shadow: 0 4px 20px rgba(124,58,237,0.12);
+  }
+
   @media (max-width: 900px) {
     .hero { padding: 48px 24px; }
     .hero h1 { font-size: 30px; }
@@ -670,6 +741,8 @@
     .section { padding: 40px 24px; }
     .proof-grid { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr; }
+    .infra-grid { grid-template-columns: 1fr; }
+    .bridge { padding: 40px 24px; }
     .pkg-grid { grid-template-columns: 1fr; }
     .roadmap { grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .roadmap::before { display: none; }
@@ -684,9 +757,9 @@
 <!-- HERO                                         -->
 <!-- ════════════════════════════════════════════ -->
 <div class="hero">
-  <div class="hero-badge">AI Workflow Automation</div>
-  <h1>We Build AI Workflows<br>That <span class="blue">Pay for Themselves</span></h1>
-  <p class="lead">Simple, measurable automations that save your team hours every week. No hype. No pilots that go nowhere. Just workflows that work &mdash; deployed in days, not months.</p>
+  <div class="hero-badge">AI Workflow & Infrastructure Solutions</div>
+  <h1>We Build AI Systems<br>That <span class="blue">Pay for Themselves</span></h1>
+  <p class="lead">From quick-win automations to full AI infrastructure. Simple, measurable systems that save your team hours every week. No hype. No pilots that go nowhere &mdash; deployed in days, not months.</p>
   <div class="hero-stat-row">
     <div class="hero-stat">
       <span class="num">74%</span>
@@ -782,9 +855,9 @@
 <!-- ════════════════════════════════════════════ -->
 <div class="section">
   <div class="section-header">
-    <div class="section-tag">Our Services</div>
-    <h2>What We Build. <span class="blue">What It Costs.</span><br><span class="green">What You Save.</span></h2>
-    <p class="section-subtitle">Every service below is a workflow we can deploy in days to weeks. No multi-year transformations. No PowerPoint decks. Working systems that produce measurable results.</p>
+    <div class="section-tag">Workflow Automation</div>
+    <h2>Quick Wins. <span class="blue">Deployed in Days.</span><br><span class="green">Paying for Themselves in Weeks.</span></h2>
+    <p class="section-subtitle">Tactical, independent automations you can deploy one at a time. Each one stands alone, delivers measurable ROI, and requires zero other dependencies.</p>
   </div>
 
   <div class="services-grid">
@@ -977,9 +1050,108 @@
 </div>
 
 <!-- ════════════════════════════════════════════ -->
-<!-- PACKAGES                                      -->
+<!-- BRIDGE                                        -->
+<!-- ════════════════════════════════════════════ -->
+<div class="bridge">
+  <div class="bridge-inner">
+    <div class="section-tag-purple">Going Deeper</div>
+    <h2>Workflows automate tasks.<br>Infrastructure transforms how your AI works.</h2>
+    <p>Quick wins get you results in days. But when you're ready to make AI a core part of your operation &mdash; with knowledge systems your team can query, tools that talk to each other, and someone keeping it all running &mdash; that's where infrastructure comes in.</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- AI INFRASTRUCTURE                             -->
 <!-- ════════════════════════════════════════════ -->
 <div class="section section-alt">
+  <div class="section-header">
+    <div class="section-tag-purple">AI Infrastructure</div>
+    <h2>Platform Plays. <span class="purple">Built to Scale.</span></h2>
+    <p class="section-subtitle">Deeper systems that multiply the value of every workflow. Deploy standalone or layer on top of your existing automations.</p>
+  </div>
+
+  <div class="infra-grid">
+
+    <!-- Infra 1: RAG Knowledge Base -->
+    <div class="svc-card">
+      <div class="infra-tag">Platform</div>
+      <div class="svc-header">
+        <div class="svc-name">AI Knowledge Base (RAG)</div>
+      </div>
+      <div class="svc-desc">Turn your documents, SOPs, and tribal knowledge into an AI-searchable knowledge base. Your team asks questions in plain English and gets accurate, sourced answers in seconds.</div>
+      <div class="svc-metrics">
+        <div class="svc-metric-item">
+          <div class="svc-metric-label">Investment</div>
+          <div class="svc-metric-value price">$5K-$15K</div>
+        </div>
+        <div class="svc-metric-item">
+          <div class="svc-metric-label">Ongoing</div>
+          <div class="svc-metric-value infra">$500-$3K/mo</div>
+        </div>
+        <div class="svc-metric-item">
+          <div class="svc-metric-label">Deploy In</div>
+          <div class="svc-metric-value timeline">2-4 weeks</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Infra 2: AI Tool Integration -->
+    <div class="svc-card">
+      <div class="infra-tag">Integration</div>
+      <div class="svc-header">
+        <div class="svc-name">AI Tool Integration</div>
+      </div>
+      <div class="svc-desc">Connect your AI to the tools your team already uses &mdash; CRMs, ticketing systems, databases, and APIs. Each integration lets AI read, write, and act across your stack.</div>
+      <div class="svc-metrics">
+        <div class="svc-metric-item">
+          <div class="svc-metric-label">Investment</div>
+          <div class="svc-metric-value price">$3K-$10K</div>
+        </div>
+        <div class="svc-metric-item">
+          <div class="svc-metric-label">Per</div>
+          <div class="svc-metric-value infra">Integration</div>
+        </div>
+        <div class="svc-metric-item">
+          <div class="svc-metric-label">Deploy In</div>
+          <div class="svc-metric-value timeline">1-3 weeks each</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Infra 3: Managed AI Operations -->
+    <div class="svc-card infra-featured">
+      <div class="infra-tag">Recurring</div>
+      <div class="svc-header">
+        <div class="svc-name">Managed AI Operations</div>
+      </div>
+      <div class="svc-desc">We run your AI systems so you don't have to. Monitoring, tuning, prompt optimization, cost management, and expansion planning &mdash; a fractional AI team on retainer.</div>
+      <div class="svc-metrics">
+        <div class="svc-metric-item">
+          <div class="svc-metric-label">Monthly</div>
+          <div class="svc-metric-value infra">$1.5K-$5K/mo</div>
+        </div>
+        <div class="svc-metric-item">
+          <div class="svc-metric-label">Model</div>
+          <div class="svc-metric-value infra">Retainer</div>
+        </div>
+        <div class="svc-metric-item">
+          <div class="svc-metric-label">Commitment</div>
+          <div class="svc-metric-value timeline">Monthly</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 28px; text-align: center;">
+    <p style="font-size: 14px; color: var(--gray-500);">Infrastructure services can be deployed standalone or bundled with any workflow engagement.</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- PACKAGES                                      -->
+<!-- ════════════════════════════════════════════ -->
+<div class="section">
   <div class="section-header">
     <div class="section-tag section-tag-green">Engagement Options</div>
     <h2>Start Where It Makes Sense.<br><span class="green">Scale When You See Results.</span></h2>
@@ -1032,10 +1204,12 @@
       <div class="pkg-name">Transform</div>
       <div class="pkg-price">$15,000</div>
       <div class="pkg-price-note">+ $1,500/mo &middot; 3-month retainer</div>
-      <div class="pkg-desc">Assessment + 3 AI workflows + ongoing optimization. We become your AI team &mdash; building, tuning, and expanding automations across your operation.</div>
+      <div class="pkg-desc">Assessment + 3 AI workflows + infrastructure foundations. We become your AI team &mdash; building workflows, deploying knowledge bases, and integrating your tools.</div>
       <ul class="pkg-list">
         <li>Everything in Assess + Build</li>
         <li>2-3 production AI workflows</li>
+        <li>AI Knowledge Base setup included</li>
+        <li>Up to 2 tool integrations included</li>
         <li>Monthly ROI performance reports</li>
         <li>Priority support and tuning</li>
         <li>Quarterly strategic review</li>
@@ -1047,12 +1221,16 @@
     </div>
 
   </div>
+
+  <div style="margin-top: 28px; text-align: center;">
+    <p style="font-size: 14px; color: var(--gray-500);">AI infrastructure services (knowledge bases, tool integrations, managed ops) can be added to any package.</p>
+  </div>
 </div>
 
 <!-- ════════════════════════════════════════════ -->
 <!-- HOW WE WORK                                   -->
 <!-- ════════════════════════════════════════════ -->
-<div class="section">
+<div class="section section-alt">
   <div class="section-header">
     <div class="section-tag">How We Work</div>
     <h2>Simple Process. <span class="blue">Measurable Outcomes.</span></h2>
@@ -1075,13 +1253,13 @@
     <div class="rm-step">
       <div class="rm-circle">3</div>
       <h3>Build &amp; Deploy</h3>
-      <p>We build your highest-priority automation, train your team, and measure the before/after. You see the savings in real time.</p>
+      <p>We build your highest-priority automation &mdash; whether that's a workflow, knowledge base, or tool integration. Train your team and measure the before/after.</p>
       <div class="rm-time">2-4 weeks</div>
     </div>
     <div class="rm-step">
       <div class="rm-circle">4</div>
       <h3>Optimize &amp; Expand</h3>
-      <p>Monthly tuning, performance reporting, and expansion to the next workflow. The savings compound over time.</p>
+      <p>Monthly tuning, performance reporting, and expansion &mdash; adding workflows, scaling AI infrastructure, and integrating new tools. The savings compound.</p>
       <div class="rm-time">$1.5K/mo &middot; ongoing</div>
     </div>
   </div>
@@ -1150,7 +1328,7 @@
 <div class="cta">
   <h2>See It Work with <span class="blue">Your Data</span></h2>
   <p>30 minutes. Your real workflows. Live AI demo. If you're not impressed, it cost you nothing but a half hour.</p>
-  <a href="mailto:thepolohour@gmail.com?subject=AI%20Workflow%20Demo%20Request&body=Hi%2C%0A%0AI'd%20like%20to%20schedule%20a%20free%2030-minute%20demo%20of%20your%20AI%20workflow%20solutions.%0A%0ACompany%3A%20%0ARole%3A%20%0ABiggest%20pain%20point%3A%20%0A%0AThanks!" class="cta-button">Schedule a Free Demo</a>
+  <a href="mailto:thepolohour@gmail.com?subject=AI%20Workflow%20%26%20Infrastructure%20Demo%20Request&body=Hi%2C%0A%0AI'd%20like%20to%20schedule%20a%20free%2030-minute%20demo.%0A%0ACompany%3A%20%0ARole%3A%20%0ABiggest%20pain%20point%3A%20%0A%0AInterested%20in%3A%20Workflow%20Automation%20%2F%20AI%20Infrastructure%20%2F%20Both%0A%0AThanks!" class="cta-button">Schedule a Free Demo</a>
   <div class="cta-sub">No pitch deck. No pressure. Just a working demo with your actual data.</div>
 </div>
 
